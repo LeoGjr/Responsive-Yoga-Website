@@ -1,0 +1,41 @@
+/*=============== BASE ===============*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body,
+input,
+button{
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+}
+
+body{
+	background-color: var(--body-color);
+	color: var(--text-color);
+	transition: background .4s; /* for dark mode animation */
+}
+
+h1,h2,h3,h4{
+	color: var(--title-color);
+	font-weight: var(--font-regular);
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}

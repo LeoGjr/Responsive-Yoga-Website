@@ -1,0 +1,46 @@
+/*=============== JOIN ===============*/
+.join{
+   &__container{
+      padding-bottom: 2rem;
+   }
+   &__content{
+      display: grid;
+      row-gap: 1.5rem;
+      background: var(--gradient-color);
+      padding: 3rem 1rem 2.5rem;
+      border-radius: 2rem;
+      text-align: center;
+   }
+   &__title,
+   &__description{
+      color: var(--white-color);
+   }
+   &__title{
+      font-size: var(--big-font-size);
+      font-family: var(--second-font);
+      margin-bottom: .75rem;
+   }
+   &__input,
+   &__button{
+      width: 100%;
+      outline: none;
+      border: none;
+   }
+   &__input{
+      padding: 1.5rem;
+      border-radius: 3rem;
+      margin-bottom: .75rem;
+      color: var(--title-color);
+      font-size: var(--small-font-size);
+
+      &::placeholder{
+         color: var(--text-color-light);
+      }
+   }
+   &__button{
+      justify-content: center;
+      box-shadow: 0 4px 12px hsla(260, 100%, 52%, .3);
+      padding-block: 1.25rem;
+      cursor: pointer;
+   }
+}

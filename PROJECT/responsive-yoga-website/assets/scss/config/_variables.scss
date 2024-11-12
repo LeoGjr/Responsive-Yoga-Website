@@ -1,0 +1,59 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+   --header-height: 3.5rem;
+
+   /*========== Colors ==========*/
+   /*Color mode HSL(hue, saturation, lightness)*/
+   --first-color: hsl(260, 100%, 66%);
+   --second-color: hsl(328, 100%, 66%);
+   --gradient-color: linear-gradient(75deg, 
+                     var(--second-color) 12%, 
+                     var(--first-color) 90%);
+   --first-color-light: hsl(260, 88%, 92%);
+   --first-color-dark: hsl(260, 80%, 16%);
+   --title-color: hsl(260, 80%, 18%);
+   --text-color: hsl(260, 24%, 32%);
+   --text-color-light: hsl(260, 16%, 65%);
+   --white-color: hsl(0, 0%, 100%);
+   --body-color: hsl(260, 100%, 97%);
+   --container-color: hsl(0, 0%, 100%);
+
+   /*========== Font and typography ==========*/
+   /*.5rem = 8px | 1rem = 16px ...*/
+   --body-font: 'Poppins', sans-serif;
+   --second-font: 'Lora', serif;
+
+   --biggest-font-size: 2.75rem;
+   --bigger-font-size: 2rem;
+   --big-font-size: 1.75rem;
+   --h1-font-size: 1.5rem;
+   --h2-font-size: 1.25rem;
+   --h3-font-size: 1rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+   --smaller-font-size: .75rem;
+
+   // Responsive typography
+   @media screen and (min-width: 1152px){
+      --biggest-font-size: 6rem;
+      --bigger-font-size: 4rem;
+      --big-font-size: 3.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+   }
+
+	/*========== Font weight ==========*/
+   --font-regular: 400;
+   --font-medium: 500;
+
+	/*========== z index ==========*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+}

@@ -1,0 +1,67 @@
+/*=============== LIST ===============*/
+.list{
+   &__container{
+      row-gap: 3rem;
+   }
+   &__content,
+   &__blob{
+      display: flex;
+   }
+   &__content{
+      justify-content: center;
+      align-items: center;
+      column-gap: 1.5rem;
+   }
+   &__number{
+      font-size: var(--big-font-size);
+      font-family: var(--second-font);
+      font-weight: var(--font-medium);
+   }
+   &__blob{
+      background-color: var(--first-color-light);
+      width: 230px;
+      height: 100px;
+      border-radius: 12.5rem;
+      justify-content: center;
+      align-items: center;
+      transition: background .4s; /* for dark mode animation */
+
+      & img{
+         width: 180px;
+         transform: translateY(-1rem);
+      }
+   }
+   &__data{
+      text-align: center;
+      display: grid;
+      justify-items: center;
+      row-gap: 5rem;
+   }
+   &__description{
+      position: relative;
+
+      & img{
+         position: absolute;
+         top: -1.8rem;
+         left: 0;
+         width: 50px;
+      }
+   }
+   &__button{
+      position: relative;
+      padding: 0;
+
+      &, & i{
+         background: var(--gradient-color);
+         -webkit-background-clip: text;
+         color: transparent;
+      }
+
+      & img{
+         position: absolute;
+         max-width: initial;
+         width: 150px;
+         left: -2.8rem;
+      }
+   }
+}

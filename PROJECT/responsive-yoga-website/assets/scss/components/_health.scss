@@ -1,0 +1,61 @@
+/*=============== HEALTH ===============*/
+.health{
+   &__container{
+      row-gap: 2rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__image{
+      position: relative;
+      justify-self: center;
+   }
+   &__img{
+      width: 320px;
+   }
+   &__rate,
+   &__course{
+      background-color: var(--container-color);
+      padding: .5rem .75rem;
+      border-radius: .75rem;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      column-gap: .5rem;
+      position: absolute;
+      transition: background .4s; /* for dark mode animation */
+   }
+   &__icon{
+      background-color: hsl(2, 100%, 95%);
+      border-radius: 50%;
+      display: flex;
+      padding: 6px;
+      font-size: 1.5rem;
+      color: hsl(2, 100%, 58%);
+   }
+   &__title,
+   &__number{
+      display: block;
+      font-size: var(--small-font-size);
+      font-weight: var(--font-medium);
+   }
+   &__title{
+      color: var(--title-color);
+   }
+   &__number{
+      background: var(--gradient-color);
+      -webkit-background-clip: text;
+      color: transparent;
+   }
+   &__rate{
+      top: 4.5rem;
+      left: .5rem;
+   }
+   &__course{
+      right: .5rem;
+      bottom: 2rem;
+   }
+}

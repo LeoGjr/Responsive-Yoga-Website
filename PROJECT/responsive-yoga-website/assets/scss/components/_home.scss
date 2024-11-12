@@ -1,0 +1,68 @@
+/*=============== HOME ===============*/
+.home{
+   &__container{
+      row-gap: 2rem;
+      padding-top: 1rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-family: var(--second-font);
+      font-weight: var(--font-medium);
+      line-height: 135%;
+      position: relative;
+      width: max-content;
+      margin: 0 auto 1.25rem;
+
+      &-box{
+         display: flex;
+         justify-content: center;
+         column-gap: .75rem;
+
+         & div{
+            background: var(--gradient-color);
+            padding: .25rem .75rem;
+            border-radius: .5rem;
+            color: var(--white-color);
+            transform: rotate(10deg);
+         }
+      }
+      & img{
+         position: absolute;
+         width: 50px;
+         left: -1rem;
+         bottom: 1rem;
+      }
+   }
+   &__description{
+      position: relative;
+      margin-bottom: 1.5rem;
+
+      & img{
+         position: absolute;
+         width: 16px;
+         right: 4rem;
+         bottom: -1rem;
+      }
+   }
+   &__box{
+      display: flex;
+      justify-content: center;
+      column-gap: 3rem;
+      margin-top: 2rem;
+
+      & h3{
+         font-size: var(--big-font-size);
+         font-family: var(--second-font);
+      }
+      & span{
+         font-size: var(--small-font-size);
+      }
+   }
+   &__img{
+      width: 320px;
+      justify-self: center;
+   }
+}

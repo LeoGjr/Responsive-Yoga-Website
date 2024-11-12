@@ -1,0 +1,60 @@
+/*=============== FOOTER ===============*/
+.footer{
+   background-color: var(--first-color-dark);
+   color: var(--text-color-light);
+   padding-block: 3rem 2rem;
+
+   &__container,
+   &__content,
+   &__data{
+      row-gap: 2.5rem;
+   }
+   &__content{
+      border-bottom: 1px solid var(--text-color-light);
+      padding-bottom: 2.5rem;
+   }
+   &__logo,
+   &__social-link{
+      background: var(--gradient-color);
+      -webkit-background-clip: text;
+      color: transparent;
+   }
+   &__logo,
+   &__title{
+      font-size: var(--h2-font-size);
+      font-family: var(--second-font);
+      margin-bottom: 1.25rem;
+   }
+   &__logo{
+      display: inline-block;
+      font-weight: var(--font-medium);
+   }
+   &__title{
+      color: var(--white-color);
+   }
+   &__social,
+   &__social-link,
+   &__group{
+      display: flex;
+   }
+   &__group{
+      flex-direction: column;
+      row-gap: 2.5rem;
+      align-items: center;
+   }
+   &__social{
+      column-gap: 1.25rem;
+
+      &-link{
+         font-size: 1.5rem;
+         transition: transform .4s;
+
+         &:hover{
+            transform: translateY(-.25rem);
+         }
+      }
+   }
+   &__copy{
+      font-size: var(--smaller-font-size);
+   }
+}
